@@ -28,7 +28,7 @@ export default function JobTable({
   }, [jobs, filter, sortOrder]);
 
   return (
-    <div className="bg-white rounded-lg shadow">
+    <div className="bg-white rounded-lg shadow mt-10">
       <div className="overflow-x-auto">
         <table className="min-w-full divide-y divide-gray-200">
           <thead className="bg-gray-50">

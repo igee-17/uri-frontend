@@ -27,8 +27,8 @@ export default function Dashboard() {
 
   useEffect(() => {
     Promise.all([
-      fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/applications`),
-      fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/applications/stats`),
+      fetch(`https://uri-backend.onrender.com/applications`),
+      fetch(`https://uri-backend.onrender.com/applications/stats`),
     ])
       .then(([jobsRes, statsRes]) =>
         Promise.all([jobsRes.json(), statsRes.json()])
